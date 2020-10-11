@@ -5,12 +5,10 @@ metadata:
     labels:
         app: hello
 spec:
-    strategy:
-      type: Recreate
     replicas: 1
-      selector:
-        matchLabels:
-          app: hello
+    selector:
+      matchLabels:
+        app: hello
     template:
       metadata:
         labels:
